@@ -155,13 +155,13 @@ searchButton.addEventListener('click', () => {
 
 // Event listener for sort by name (ascending) button
 sortNameAscBtn.addEventListener('click', () => {
-  sortedStudents.sort((a, b) => a.first_name.localeCompare(b.first_name));
+  sortedStudents.sort((a, b) => (a.first_name+' '+a.last_name).localeCompare(b.first_name+' '+b.last_name));
   renderStudents();
 });
 
 // Event listener for sort by name (descending) button
 sortNameDescBtn.addEventListener('click', () => {
-  sortedStudents.sort((a, b) => b.first_name.localeCompare(a.first_name));
+  sortedStudents.sort((a, b) => (b.first_name+' '+b.last_name).localeCompare(a.first_name+' '+a.last_name));
   renderStudents();
 });
 
