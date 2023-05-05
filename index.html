@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .avatar {
+          width: 38px;
+          height: 38px;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+      </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="student-p"><h1>Student Portal</h1></section>
+    <section id="student-s">
+        <input type="search" placeholder="search">
+        <button>Search</button>
+
+    </section>
+
+    <section id="sbtn">
+      <button id="sortNameAsc">Sort A->Z</button>
+      <button id="sortNameDesc">Sort Z->A</button>
+      <button id="sortMarks">Sort By Marks</button>
+      <button id="sortPassing">Sort By Passing</button>
+      <button id="sortClass">Sort By Class</button>
+      <button id="sortGender">Sort By Gender</button>
+    </section>
+  
+    <table id="student-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Class</th>
+            <th>Marks</th>
+            <th>Passing</th>
+            <th>City</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody class="tb">
+        </tbody>
+      </table>
+    
+  
+
+    <script src="script.js"></script>
+</body>
+</html>

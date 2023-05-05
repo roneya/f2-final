@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    background-color: #CDCDCD;
+}
+#student-p{
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+}
+#student-p h1{
+  background-color: black;
+}
+
+#student-s{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding-top: 20px;
+
+}
+#student-s input {
+width: 80%;
+padding: 10px 0;
+font-size: 24px;
+}
+
+
+#student-s button {
+padding: 10px 0;
+width: 10%;
+font-size: 24px;
+background-color: black;
+color: white;
+}
+
+#sbtn{
+    display: flex; 
+    justify-content: space-evenly;
+   
+    padding: 20px 0;
+
+}
+#sbtn button{
+
+    background-color: black; 
+    padding-top: 20px; 
+    padding: 10px 0;
+    width: 217px;
+    font-size: 24px;
+    color: white;
+}
+
+.avatar-container {
+    display: flex;
+    align-items: center;
+  }
+
+  #student-table{
+    width: 100%;
+   
+    padding: 0 20px;
+
+  }
+  
+  #student-table th,
+  #student-table td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  #student-table th {
+    background-color: #ccc;
+    font-weight: bold;
+  }
+  
+  #student-table td.avatar-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  #student-table .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  
