@@ -99,6 +99,10 @@ const students = [{"id":1,"first_name":"Chadwick","last_name":"Ayre","email":"ca
 {"id":99,"first_name":"Gordon","last_name":"Vieyra","email":"gvieyra2q@geocities.com","gender":"Male","img_src":"https://robohash.org/nullaeumaut.png?size=50x50&set=set1","class":11,"marks":59,"passing":false,"city":"Nīkshahr"},
 {"id":100,"first_name":"Zoe","last_name":"Moorhead","email":"zmoorhead2r@sfgate.com","gender":"Female","img_src":"https://robohash.org/fugiatcorporisdeleniti.png?size=50x50&set=set1","class":8,"marks":43,"passing":true,"city":"Makin Village"}];
 
+
+
+
+
 const studentTable = document.querySelector('#student-table tbody');
 const sortNameAscBtn = document.querySelector('#sortNameAsc');
 const sortNameDescBtn = document.querySelector('#sortNameDesc');
@@ -138,9 +142,9 @@ const searchButton = document.querySelector('#student-s button');
 searchButton.addEventListener('click', () => {
   const searchTerm = searchInput.value.toLowerCase();
   const searchResults = students.filter(student => {
+    const fullName = `${student.first_name.toLowerCase()} ${student.last_name.toLowerCase()}`;
     return (
-      student.first_name.toLowerCase().includes(searchTerm) ||
-      student.last_name.toLowerCase().includes(searchTerm) ||
+      fullName.includes(searchTerm) ||
       student.email.toLowerCase().includes(searchTerm)
     );
   });
